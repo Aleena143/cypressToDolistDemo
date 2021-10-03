@@ -1,6 +1,5 @@
 {
   "testFiles": "*.feature",
   "$schema": "https://on.cypress.io/cypress.schema.json",
-  "projectId": "gordqy"
+  "projectId": "mr7ejp"
 }
-

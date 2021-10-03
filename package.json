@@ -1,7 +1,7 @@
 {
-  "name": "modifyregistration",
+  "name": "verifytodo",
   "version": "1.0.0",
-  "description": "for register modification project",
+  "description": "for verifying todo lists",
   "main": "index.js",
   "scripts": {
     "cypressopen": "cypress open",
@@ -12,7 +12,8 @@
     "posttest": "node cucumber-html-report.js",
     "recordrun" : "cypress run --record --key 03db0c7e-ea7a-433b-9a44-09a52d5bd27f",
     "test": "npm run scriptss || npm run posttest",
-    "recordview" :"npm run recordrun"
+    "newkeyrun" :"cypress run --record --key 15ed9939-e07b-4274-bc4f-bb383f7e426d",
+    "recordview" :"npm run newkeyrun"
   
 
   },
