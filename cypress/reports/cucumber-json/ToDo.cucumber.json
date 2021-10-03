@@ -1,0 +1,533 @@
+[
+  {
+    "description": "    As a user\n    I want to verify todolist functionalities",
+    "keyword": "Feature",
+    "name": "ToDolist Feature",
+    "line": 1,
+    "id": "todolist-feature",
+    "tags": [],
+    "uri": "ToDo.feature",
+    "elements": [
+      {
+        "id": "todolist-feature;add-to-todolist",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Add to Todolist",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am in the todolist site",
+            "result": {
+              "status": "passed",
+              "duration": 3101000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "header h1 must contain \"Things To Do\"",
+            "result": {
+              "status": "passed",
+              "duration": 572000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Items"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Learn cypress"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Learn selenium"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Learn Kotlin"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Learn robotics"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Learn C++"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User enters following Items",
+            "result": {
+              "status": "passed",
+              "duration": 1706000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Items"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Learn cypress"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Learn selenium"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Learn Kotlin"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Learn robotics"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Learn C++"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Following New todos should present",
+            "result": {
+              "status": "passed",
+              "duration": 190000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "todolist-feature;verify-search-functionality",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Verify Search functionality",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am in the todolist site",
+            "result": {
+              "status": "passed",
+              "duration": 1051000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "header h1 must contain \"Things To Do\"",
+            "result": {
+              "status": "passed",
+              "duration": 260000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I search for \"Learn\"",
+            "result": {
+              "status": "passed",
+              "duration": 529000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I should see \"Learn\" in searchlist",
+            "result": {
+              "status": "passed",
+              "duration": 259000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "todolist-feature;verify-completed-todolist-functionality",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "verify completed Todolist functionality",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am in the todolist site",
+            "result": {
+              "status": "passed",
+              "duration": 871000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "header h1 must contain \"Things To Do\"",
+            "result": {
+              "status": "passed",
+              "duration": 246000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "courses"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Learn Javascript"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Learn React"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 35,
+            "name": "User Marks follwing course as completed",
+            "result": {
+              "status": "passed",
+              "duration": 484000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "courses"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Learn Javascript"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Learn React"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "Following courses should present in completed list",
+            "result": {
+              "status": "passed",
+              "duration": 257000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "courses"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Learn Javascript"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Learn React"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "Following Completed courses should not present in Active list",
+            "result": {
+              "status": "passed",
+              "duration": 257000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "verify  All lists contain both completed and Active list",
+            "result": {
+              "status": "passed",
+              "duration": 265000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "todolist-feature;verify-there-are-no-items--in-active-list-once-user-completed-all-items",
+        "keyword": "Scenario",
+        "line": 51,
+        "name": "verify There are no items  in active list once user completed all items",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am in the todolist site",
+            "result": {
+              "status": "passed",
+              "duration": 856000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "header h1 must contain \"Things To Do\"",
+            "result": {
+              "status": "passed",
+              "duration": 270000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 53,
+            "name": "User Marks all course as \"completed\"",
+            "result": {
+              "status": "passed",
+              "duration": 773000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 54,
+            "name": "verify no items present in \"active\" list",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<div.pull-left>' to contain '0 items left'\n    at ToDo.verifyNoItemTextPresent (https://simplest-react-todo-app.herokuapp.com/__cypress/tests?p=cypress\\integration\\ToDo.feature:282:37)\n    at Context.eval (https://simplest-react-todo-app.herokuapp.com/__cypress/tests?p=cypress\\integration\\ToDo.feature:107:13)\n    at Context.resolveAndRunStepDefinition (https://simplest-react-todo-app.herokuapp.com/__cypress/tests?p=cypress\\integration\\ToDo.feature:10821:29)\n    at Context.eval (https://simplest-react-todo-app.herokuapp.com/__cypress/tests?p=cypress\\integration\\ToDo.feature:10142:35)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "todolist-feature;verify-there-are-no-items--in-completed-list-once-user-didnt-complete-any-items",
+        "keyword": "Scenario",
+        "line": 56,
+        "name": "verify There are no items  in completed list once user didnt complete any items",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am in the todolist site",
+            "result": {
+              "status": "passed",
+              "duration": 1248000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "header h1 must contain \"Things To Do\"",
+            "result": {
+              "status": "passed",
+              "duration": 279000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 58,
+            "name": "User Marks all course as \"active\"",
+            "result": {
+              "status": "passed",
+              "duration": 1158000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "verify no items present in \"completed\" list",
+            "result": {
+              "status": "passed",
+              "duration": 391000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "todolist-feature;validate-escape--press-in-footer",
+        "keyword": "Scenario",
+        "line": 62,
+        "name": "validate Escape  press in footer",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am in the todolist site",
+            "result": {
+              "status": "passed",
+              "duration": 1543000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "header h1 must contain \"Things To Do\"",
+            "result": {
+              "status": "passed",
+              "duration": 274000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 65,
+            "name": "validate \"Escape\" press",
+            "result": {
+              "status": "passed",
+              "duration": 306000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "todolist-feature;validate-slash--press-in-footer",
+        "keyword": "Scenario",
+        "line": 68,
+        "name": "validate slash  press in footer",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am in the todolist site",
+            "result": {
+              "status": "passed",
+              "duration": 928000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "header h1 must contain \"Things To Do\"",
+            "result": {
+              "status": "passed",
+              "duration": 228000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 71,
+            "name": "validate \"/\" press",
+            "result": {
+              "status": "passed",
+              "duration": 355000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "todolist-feature;validate-n--press-in-footer",
+        "keyword": "Scenario",
+        "line": 74,
+        "name": "validate N  press in footer",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am in the todolist site",
+            "result": {
+              "status": "passed",
+              "duration": 863000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "header h1 must contain \"Things To Do\"",
+            "result": {
+              "status": "passed",
+              "duration": 258000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 77,
+            "name": "validate \"N\" press",
+            "result": {
+              "status": "passed",
+              "duration": 334000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

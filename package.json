@@ -1,0 +1,47 @@
+{
+  "name": "modifyregistration",
+  "version": "1.0.0",
+  "description": "for register modification project",
+  "main": "index.js",
+  "scripts": {
+    "cypressopen": "cypress open",
+    "clean:reports": "if exist cypress\\reports rmdir /S/Q cypress\\reports",
+    "pretest": "npm run clean:reports",
+   
+    "scriptss":"cypress run --browser chrome",
+    "posttest": "node cucumber-html-report.js",
+    "recordrun" : "cypress run --record --key 03db0c7e-ea7a-433b-9a44-09a52d5bd27f",
+    "test": "npm run scriptss || npm run posttest",
+    "recordview" :"npm run recordrun"
+  
+
+  },
+
+  "author": "aleena",
+  "license": "ISC",
+  "devDependencies": {
+    
+    "cypress": "^8.5.0",
+    "cypress-xpath": "^1.6.2",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "dependencies": {
+ 
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reports/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  }
+  
+}
+
